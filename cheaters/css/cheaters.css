@@ -1,7 +1,4 @@
 /*
- This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
- Please leave this notice in place, along with any additional credits below.
- ---------------------------------------------------------------
  Upstanding Citizen by Brett Terpstra
  Modified for Cheaters by Brett Terpstra, 2012 <http://brettterpstra.com>
  Non-standard fonts used:
@@ -33,7 +30,7 @@
   font-style: normal; }
 body {
   -webkit-font-smoothing: antialiased;
-  font: normal .8764em/1.5em ArmataRegular, Helvetica, Arial,Verdana,sans-serif;
+  font: normal .8764em/1.5em ArmataRegular, Helvetica, Arial, Verdana, sans-serif;
   margin: 0;
   -webkit-transition: background .3s ease-out; }
 
@@ -54,7 +51,7 @@ li {
     margin: 0.5em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: ArmataRegular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: ArmataRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
 h4, h5, h6 {
@@ -62,7 +59,6 @@ h4, h5, h6 {
 
 h1 {
   color: #000;
-  font-size: 4.2857em;
   line-height: 1em;
   margin: 0.6563em 0; }
 
@@ -118,7 +114,7 @@ h6 {
 
 body, p, div {
   color: #222;
-  font-family: ArmataRegular,"Georgia",serif;
+  font-family: ArmataRegular, "Georgia", serif;
   word-wrap: break-word; }
 
 a, span {
@@ -229,7 +225,8 @@ table {
     font-size: 16px;
     font-weight: normal !important;
     text-transform: uppercase;
-    vertical-align: middle; }
+    vertical-align: middle;
+    white-space: nowrap; }
 
 tr.divider {
   padding-top: 9px;
@@ -349,10 +346,6 @@ table tr:nth-child(odd), table th:nth-child(odd), table td:nth-child(odd) {
 table tr:nth-child(even), table td:nth-child(even) {
   background: rgba(0, 0, 0, 0.06); }
 
-#container .active {
-  transition: background .1s linear;
-  background: #666; }
-
 @media print {
   body {
     overflow: auto; }
@@ -437,14 +430,8 @@ pre code {
 
   .inverted {
     background: #252a2a; }
-    .inverted #container .active {
-      transition: background .1s linear;
-      background: #222; }
     .inverted #wrapper {
       background: #252a2a; }
-
-  #jquery h2:before, #jquery h2:after {
-    content: ''; }
 
   .inverted .inner {
     border: 1px solid rgba(200, 200, 200, 0.3) !important; }
@@ -487,8 +474,6 @@ pre code {
   .inverted a {
     color: #acd1d5; } }
 #wrapper {
-  min-width: 300px;
-  max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px; }
 
@@ -577,7 +562,7 @@ article {
 #container {
   float: left;
   clear: both;
-  margin: 90px 0 10px;
+  margin: 20px 0 10px;
   width: 100%; }
 
 table {
@@ -600,97 +585,6 @@ tr.divider {
 .wg {
   text-align: center;
   width: 50px; }
-
-#markdown h3 {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: ArmataRegular;
-  word-spacing: .2em;
-  background: rgba(0, 0, 0, 0.75);
-  color: #EEE;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  margin: 0;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
-  border: none; }
-
-#jquery h1, #jquery h2 {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: ArmataRegular;
-  word-spacing: .2em;
-  background: rgba(0, 0, 0, 0.75);
-  color: #EEE;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  margin: 0;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
-  border: none; }
-
-#multimarkdown h3 {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: ArmataRegular;
-  word-spacing: .2em;
-  background: rgba(0, 0, 0, 0.75);
-  color: #EEE;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  margin: 0;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
-  border: none; }
-#multimarkdown h4 {
-  font-size: 24px;
-  text-align: center; }
-
-#jquery div {
-  float: left;
-  width: 49%; }
-#jquery section {
-  float: left;
-  border: 1px solid #ccc;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  margin: 5px;
-  padding: 10px;
-  width: 90%; }
-#jquery h2:before, #jquery h2:after {
-  content: ''; }
-
-#html5 div {
-  float: left;
-  clear: both; }
-#html5 article {
-  width: 48%;
-  float: left;
-  margin: 4px; }
-#html5 h5 {
-  font-size: 18px;
-  border-bottom: 1px dashed #ccc;
-  font-weight: normal;
-  margin-top: 8px; }
-
-.inverted #html5 h5 {
-  border-bottom: 1px dashed #444444; }
-
-#html5 .inner {
-  border: 1px solid #ccc;
-  padding: 5px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  margin-top: 0; }
-#html5 #page8 {
-  width: 100%; }
-#html5 p {
-  font-size: .97em; }
 
 iframe {
   position: fixed;
@@ -779,12 +673,6 @@ input#goto {
   background: #2e3333; }
 
 @media only screen and (max-width: 600px) {
-  #html5 article {
-    width: 100%; }
-
-  #jquery div {
-    width: 100%; }
-
   #container img {
     max-width: 800px; } }
 @media only screen and (max-width: 480px) {
@@ -837,5 +725,130 @@ input#goto {
       position: absolute;
       pointer-events: none;
       display: block; } }
+@media only screen and (min-width: 480px) {
+  .multicolumn #wrapper {
+    min-width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    max-width: none;
+    padding: 0; }
+  .multicolumn #menu {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background: rgba(245, 245, 245, 0.85);
+    padding: 0;
+    -webkit-user-select: none; }
+  .multicolumn #container {
+    float: none;
+    clear: none;
+    margin: 0;
+    width: auto;
+    padding: 110px 0 10px 10px;
+    column-count: 3;
+    overflow: scroll;
+    position: fixed;
+    height: 85vh;
+    column-width: auto; }
+  .multicolumn h1 {
+    color: #111;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin: .9em 0;
+    font-weight: 700;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #dddddd;
+    text-align: center;
+    padding: 0.3em 0;
+    font-family: ArmataRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #111;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin: .9em 0;
+    font-weight: 700;
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    left: 0;
+    right: 0; }
+  .multicolumn.inverted h1 {
+    border-color: rgba(200, 200, 200, 0.3); }
+  .multicolumn h2:first-of-type, .multicolumn h3:first-of-type {
+    -webkit-column-break-before: avoid; }
+  .multicolumn table {
+    -webkit-column-break-inside: avoid; }
+  .multicolumn h2, .multicolumn h3 {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: ArmataRegular;
+    word-spacing: .2em;
+    background: rgba(0, 0, 0, 0.75);
+    color: #EEE;
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    margin: 4px 0;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+    -webkit-column-break-before: always; }
+  .multicolumn h4 {
+    color: #333;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin: 0.3em 0;
+    /* background: #777; */
+    padding: 4px;
+    border-radius: 4px; }
+  .multicolumn p {
+    font-size: 1em;
+    line-height: 1.3125em;
+    margin: 1.3125em 1em; } }
+
+@-webkit-keyframes beat {
+  100% {
+    background-color: rgba(208, 203, 153, 0.5); } }
+caption.active, th.active, h1.active, h2.active, h3.active, h4.active, h5.active, h6.active, strong.active, em.active {
+  -webkit-animation-name: beat;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards; }
+
+div#toc {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  right: 10px;
+  top: 65px;
+  border: 2px solid #ccc;
+  z-index: 2000;
+  min-width: 250px;
+  border-radius: 4px; }
+  div#toc ul {
+    list-style-type: none;
+    padding: 0 1em; }
+    div#toc ul a {
+      color: #333;
+      display: inline-block;
+      }
+  div#toc input {
+    float: left;
+    width: 100%;
+    margin: 0 0 .5em 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 15px;
+    padding: 5px;
+    line-height: 1.2;
+    color: #333;
+    font-family: ArmataRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    outline: 0;
+    border-bottom: solid 1px #ddd; }
+    div#toc input:focus {
+      background: rgba(250, 250, 161, 0.25); }
 
 /*# sourceMappingURL=cheaters.css.map */
