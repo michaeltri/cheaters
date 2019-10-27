@@ -1,0 +1,8 @@
+title: Cheaters
+description: Customizable cheat sheet system for OS X
+google_analytics: UA-34296025-1
+show_downloads: true
+theme: jekyll-theme-modernist
+
+gems:
+  - jekyll-mentions
