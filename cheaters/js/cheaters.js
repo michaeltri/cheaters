@@ -113,7 +113,7 @@ var Cheaters = (function () {
 							})
 						);
 					} else if (/\.html?$/.test(href)) {
-						var headers = $('#container').html().match(/<!--(.*?)%%%END/si);
+						var headers = $('#container').html().match(/<!--(.*?)%%%END/i);
 						if (headers) {
 							data = JSON.parse(headers[1]);
 							if (data)
