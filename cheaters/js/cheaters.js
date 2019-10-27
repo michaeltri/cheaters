@@ -112,6 +112,7 @@ var Cheaters = (function () {
 								gfm: true
 							})
 						);
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub, "container"]);
 					} else if (/\.html?$/.test(href)) {
 						var headers = $('#container').html().match(/<!--(.*?)%%%END/i);
 						if (headers) {
